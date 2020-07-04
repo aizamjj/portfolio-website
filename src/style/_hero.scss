@@ -1,4 +1,37 @@
 #hero {
+  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
   font-size: $default-font-size;
-  background: $primary-color;
+  background: $white-color;
+  font-weight: 400;
+  color: $dark-blue-text;
+  padding: 0rem 5.6rem;
+  margin-bottom: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 3.2rem;
+  text-align: left;
+}
+
+.hero-cta {
+  display: flex;
+
+  & a {
+    font-size: 2.4rem;
+  }
+}
+
+.hero-name {
+  background-image: linear-gradient(45deg, $primary-color 10%, $secondary-color 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
