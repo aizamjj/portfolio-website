@@ -5,7 +5,6 @@ import { withStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Button from '@material-ui/core/Button';
 
-
 const Hero = () => {
   const { hero } = useContext(PortfolioContext);
   const { title, name, subtitle, cta } = hero;
