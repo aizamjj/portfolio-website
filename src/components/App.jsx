@@ -3,29 +3,33 @@ import '../style/main.scss';
 import { PortfolioProvider } from '../context/context';
 
 // component imports
-// import Image from './Image/Image';
 import Hero from './Hero';
 import About from './About';
 import Projects from './Projects';
+import Footer from './Footer';
 
 // other imports
-import { heroData, aboutData, projectsData } from '../data/data';
+import { heroData, aboutData, projectsData, footerData } from '../data/data';
 
 const App = () => {
   const [hero, setHero] = useState({});
   const [about, setAbout] = useState({});
   const [projects, setProjects] = useState([]);
+  const [footer, setFooter] = useState([]);
+
   useEffect(() => {
     setHero({ ...heroData });
     setAbout({ ...aboutData });
     setProjects([...projectsData]);
+    setFooter([ ...footerData ]);
   }, []);
 
   return (
-    <PortfolioProvider value={{ hero, about, projects }}>
+    <PortfolioProvider value={{ hero, about, projects, footer }}>
       <Hero />
       <About />
       <Projects />
+      <Footer />
     </PortfolioProvider>
   );
 };
