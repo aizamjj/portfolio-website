@@ -8,5 +8,9 @@
 @import './sections/hero';
 @import './sections/about';
 @import './sections/projects';
-@import './sections/footer';
-@import './sections/side.scss';
+
+//LAYOUT
+
+@import './layout/footer';
+@import './layout/side';
+@import './layout/contact'
