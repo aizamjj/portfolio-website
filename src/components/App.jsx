@@ -7,6 +7,7 @@ import Hero from './Hero';
 import About from './About';
 import Projects from './Projects';
 import Footer from './Footer';
+import Side from './Side';
 
 // other imports
 import { heroData, aboutData, projectsData, footerData } from '../data/data';
@@ -26,6 +27,7 @@ const App = () => {
 
   return (
     <PortfolioProvider value={{ hero, about, projects, footer }}>
+      <Side />
       <Hero />
       <About />
       <Projects />

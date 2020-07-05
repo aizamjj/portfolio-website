@@ -20,48 +20,48 @@ export const aboutData = {
 
 export const projectsData = [
   {
-  id: uuidv1(),
-  name: 'Accountabud',
-  url: 'https://github.com/aizamjj',  
+    id: uuidv1(),
+    name: 'Accountabud',
+    url: 'https://github.com/aizamjj',
   },
   {
-  id: uuidv1(),
-  name: 'turntable',
-  url: 'https://github.com/aizamjj',  
+    id: uuidv1(),
+    name: 'turntable',
+    url: 'https://github.com/aizamjj',
   },
   {
-  id: uuidv1(),
-  name: 'ravingz',
-  url: 'https://github.com/aizamjj',  
+    id: uuidv1(),
+    name: 'ravingz',
+    url: 'https://github.com/aizamjj',
   },
   {
-  id: uuidv1(),
-  name: 'pomodoc',
-  url: 'https://github.com/aizamjj',  
+    id: uuidv1(),
+    name: 'pomodoc',
+    url: 'https://github.com/aizamjj',
   },
 ];
 
 // FOOTER DATA
 
 export const footerData = [
-    {
-      id: uuidv1(),
-      name: 'twitter',
-      url: 'https://twitter.com/ajjigjidsuren',
-    },
-    {
-      id: uuidv1(),
-      name: 'linkedin',
-      url: 'https://linkedin.com/in/aizamjj',
-    },
-    {
-      id: uuidv1(),
-      name: 'github',
-      url: 'https://github.com/aizamjj',
-    },
-    {
-      id: uuidv1(),
-      name: 'codepen',
-      url: 'https://codepen.com',
-    },
-]
+  {
+    id: uuidv1(),
+    name: 'twitter',
+    url: 'https://twitter.com/ajjigjidsuren',
+  },
+  {
+    id: uuidv1(),
+    name: 'linkedin',
+    url: 'https://linkedin.com/in/aizamjj',
+  },
+  {
+    id: uuidv1(),
+    name: 'github',
+    url: 'https://github.com/aizamjj',
+  },
+  {
+    id: uuidv1(),
+    name: 'codepen',
+    url: 'https://codepen.com',
+  },
+];
