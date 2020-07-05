@@ -6,22 +6,26 @@ import { PortfolioProvider } from '../context/context';
 // import Image from './Image/Image';
 import Hero from './Hero';
 import About from './About';
+import Projects from './Projects';
 
 // other imports
-import { heroData, aboutData } from '../data/data';
+import { heroData, aboutData, projectsData } from '../data/data';
 
 const App = () => {
   const [hero, setHero] = useState({});
   const [about, setAbout] = useState({});
+  const [projects, setProjects] = useState([]);
   useEffect(() => {
     setHero({ ...heroData });
     setAbout({ ...aboutData });
+    setProjects([...projectsData]);
   }, []);
 
   return (
-    <PortfolioProvider value={{ hero, about }}>
+    <PortfolioProvider value={{ hero, about, projects }}>
       <Hero />
       <About />
+      <Projects />
     </PortfolioProvider>
   );
 };

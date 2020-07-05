@@ -1,0 +1,16 @@
+h1 {
+    font-weight: 700;
+}
+
+p,
+a {
+    font-size: $default-font-size;
+}
+
+.section-title {
+    margin: 0px;
+    margin-bottom: 4.5rem;
+    font-size: $big-font-size;
+    font-weight: bold;
+    text-transform: uppercase;
+}

@@ -1,5 +1,10 @@
 @import './variables';
-@import './hero';
-@import './about';
 @import './base';
+@import './typography';
 @import './sections';
+
+// SECTIONS
+
+@import './sections/hero';
+@import './sections/about';
+@import './sections/projects';

@@ -1,7 +1,10 @@
 import React, { useContext } from 'react';
 import PortfolioContext from '../context/context';
 import Grid from '@material-ui/core/Grid';
+
+// import components
 import Image from './Image/Image';
+import Title from './Title';
 
 const About = () => {
   const { about } = useContext(PortfolioContext);
@@ -9,10 +12,9 @@ const About = () => {
 
   return (
       <section id="about">
-        {/* <Container> */}
           <Grid container spacing={3} >
             <Grid item xs={12}>
-              <h1>About Me</h1>
+              <Title title="About Me" />
             </Grid>
             <Grid item xs={12} sm={6}>
               <div className="about-image">
@@ -26,7 +28,6 @@ const About = () => {
               </div>
             </Grid>
           </Grid>
-        {/* </Container> */}
       </section>
   )
 
