@@ -20,7 +20,7 @@ const App = () => {
 
   return (
     <PortfolioProvider value={{ hero, about }}>
-      <Hero id="hero" />
+      <Hero />
       <About />
     </PortfolioProvider>
   );
