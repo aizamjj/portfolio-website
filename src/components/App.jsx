@@ -9,9 +9,11 @@ import Projects from './Projects';
 import Contact from './Contact';
 import Footer from './Footer';
 import Side from './Side';
+import SpeedDial from './SpeedDial';
 
 // other imports
 import { heroData, aboutData, projectsData, footerData, contactData } from '../data/data';
+import FloatingButton from './FloatingButton';
 
 const App = () => {
   const [hero, setHero] = useState({});
@@ -30,12 +32,13 @@ const App = () => {
 
   return (
     <PortfolioProvider value={{ hero, about, projects, footer, contact }}>
-      <Side />
       <Hero />
       <About />
       <Projects />
       <Contact />
+      <SpeedDial />
       <Footer />
+      <FloatingButton />
     </PortfolioProvider>
   );
 };

@@ -1,7 +1,4 @@
-aside {
-  width: 40px;
-  position: fixed;
-  bottom: 0;
-  z-index: 10;
-  color: $dark-grey;
+.float {
+  transform: 'translateZ(0px)';
+  flexGrow: 1
 }
