@@ -67,25 +67,25 @@ export default function SpeedDials() {
   return (
       <div className="float">
         <div className={classes.speedDialWrapper}>
-            <SpeedDial
-            ariaLabel="SpeedDial example"
-            className={classes.speedDial}
-            hidden={hidden}
-            icon={<SpeedDialIcon />}
-            onClose={handleClose}
-            onOpen={handleOpen}
-            open={open}
-            direction={direction}
-            >
-            {actions.map((action) => (
-                <SpeedDialAction
-                key={action.name}
-                icon={action.icon}
-                tooltipTitle={action.name}
-                onClick={handleClose}
-                />
-            ))}
-            </SpeedDial>
+          <SpeedDial
+          ariaLabel="SpeedDial example"
+          className={classes.speedDial}
+          hidden={hidden}
+          icon={<SpeedDialIcon />}
+          onClose={handleClose}
+          onOpen={handleOpen}
+          open={open}
+          direction={direction}
+          >
+          {actions.map((action) => (
+              <SpeedDialAction
+              key={action.name}
+              icon={action.icon}
+              tooltipTitle={action.name}
+              onClick={handleClose}
+              />
+          ))}
+          </SpeedDial>
         </div>
       </div>
   );

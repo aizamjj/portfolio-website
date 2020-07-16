@@ -39,9 +39,9 @@ const Hero = () => {
             </h1>
           </animated.div>
             <animated.p className="hero-cta" style={ props } >
-              <StyledButton>
+              <a className="cta-btn" href="#about">
                 {cta}
-              </StyledButton>
+              </a>
             </animated.p>
         </Container>
       </section>

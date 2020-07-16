@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import PortfolioContext from '../context/context';
 import Grid from '@material-ui/core/Grid';
+import { useSpring, config, animated } from 'react-spring';
 
 // import components
 import Image from './Image/Image';
