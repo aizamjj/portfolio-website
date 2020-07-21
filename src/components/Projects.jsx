@@ -9,20 +9,19 @@ const Projects = () => {
 
   return (
     <section id="projects">
-      <Grid container spacing={3}>
-        <Grid item xs={12} >
-            <Title title="Projects" />
-        </Grid>
-        {/* <Grid item xs={6} spacing={3}> */}
+        <div>
           {projects.map((projects, index) => {
-              const { name, url } = projects;
-              return (
-                <Grid key={index} xs={6} spacing={3} >{name}</Grid>
-              )
+            const { name, url, description } = projects;
+            return (
+            <div className="box">
+                <div className="content">
+                  <h2 key={index} className='projects-name' >{name}</h2>
+                  <p key={index} className='projects-description' >{description}</p>
+                </div>
+            </div>
+            )
           })}
-         {/* </Grid> */}
-      </Grid>
-
+        </div>
     </section>
   )
 }

@@ -23,21 +23,25 @@ export const projectsData = [
     id: uuidv1(),
     name: 'Accountabud',
     url: 'https://github.com/aizamjj',
+    description: 'This is a fullstack app for BLM as part of a hackathon.',
   },
   {
     id: uuidv1(),
     name: 'turntable',
     url: 'https://github.com/aizamjj',
+    description: 'This is another capstone project that is blah blah.',
   },
   {
     id: uuidv1(),
     name: 'ravingz',
     url: 'https://github.com/aizamjj',
+    description: 'Here is another project that is done with react adn other stuff',
   },
   {
     id: uuidv1(),
     name: 'pomodoc',
     url: 'https://github.com/aizamjj',
+    description: 'Here is my other stuff that I worked on',
   },
 ];
 
