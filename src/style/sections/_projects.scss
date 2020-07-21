@@ -4,46 +4,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    min-height:100vh;
-    
+    flex-wrap: wrap;    
   .box {
     position: relative;
     width: 300px;
     height: 400px;
+    margin: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #060c21;
-    margin: 40px;
+    background-color: #060c21;
   
-    &:before {
+    &::before {
         content: '';
         position: absolute;
-        top: -2px;
-        left: -2px;
-        right: -2px;
-        bottom: -2px;
-        background: #fff;
+        background-image: $gradient;
         z-index: -1;
+        height: calc(100% + 10px);
+        width: calc(100% + 10px);
+        filter: blur(10px);
     }
     
-    &:after {
-        content: '';
-        position: absolute;
-        top: -2px;
-        left: -2px;
-        right: -2px;
-        bottom: -2px;
-        background: #fff;
-        z-index: -2;
-        filter: blur(30px)
-    }
-    
-    &:before,:after {
-        background: linear-gradient(235deg, $primary-color, #060c21, $secondary-color)
-    }
-
     .content {
     padding: 20px;
     box-sizing: border-box;

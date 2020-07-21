@@ -15,6 +15,7 @@ const Projects = () => {
             const { name, url, description } = projects;
             return (
             <div className="box">
+                <div className="glass"></div>
                 <div className="content">
                   <h2 key={index} className="projects-name" >{name}</h2>
                   <p key={index} className="projects-description" >{description}</p>
