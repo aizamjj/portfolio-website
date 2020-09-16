@@ -2,8 +2,9 @@ import React, { useContext, useEffect, useState } from 'react';
 import PortfolioContext from '../context/context';
 import Title from './Title';
 import Grid from '@material-ui/core/Grid';
-import Paper from '@material-ui/core/Paper';
+import Card from '@material-ui/core/Paper';
 import Container from '@material-ui/core/Container'
+import { CardMedia, CardContent, Typography } from '@material-ui/core';
 
 const Projects = () => {
   const { projects } = useContext(PortfolioContext);
@@ -14,13 +15,13 @@ const Projects = () => {
           {projects.map((projects, index) => {
             const { name, url, description } = projects;
             return (
-            <div className="box">
-                <div className="glass"></div>
-                <div className="content">
-                  <h2 key={index} className="projects-name" >{name}</h2>
-                  <p key={index} className="projects-description" >{description}</p>
-                </div>
-            </div>
+            <Card className="box">
+                <CardMedia />
+                <CardContent> 
+                  <Typography variant="h5" component="h2" >{name}</Typography>
+                  <Typography variant="body2" component="p" >{description}</Typography>
+                </CardContent>
+            </Card>
             )
           })}
         </Container>
