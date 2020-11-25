@@ -9,19 +9,19 @@
   }
 
   &:before {
-    content: '';
+    content: "";
     display: inline-block;
     position: absolute;
     // background: $secondary-color;
     width: 60px;
     height: 100%;
-    opacity: .5s;
+    opacity: 0.5s;
     // filter: blur(30px);
     // transform: translate(-130px) skewX(-15deg);
   }
-  
+
   &:after {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     // background: $primary-color;
@@ -32,8 +32,6 @@
     opacity: 0s;
     // filter: blur(30px);
     // transform: translate(-100px) scaleX(-15deg);
-
-
   }
 
   &:hover {
@@ -46,41 +44,37 @@
 
   &:hover:before {
     transform: translate(300px) skewX(-15deg);
-    opacity: .6;
-    transition: .7s;
+    opacity: 0.6;
+    transition: 0.7s;
   }
 
   &:hover:after {
     transform: translate(300px) skewX(-15deg);
     opacity: 1;
-    transition: .7s;
+    transition: 0.7s;
   }
 }
 
 //FLOATIN BUTTON
 
 .floating-btn {
-    width: 10%;
-    height: 10%;
-    background-color: $background;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    color: $white-color;
-    font-size: 40px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.50);
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    transition: background 250ms ease-in;
-    
-    &:hover {
-      background: $text;
-      color: $text-inverse;
-     
-    }
+  width: 10%;
+  height: 10%;
+  background-color: $background;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: $white-color;
+  font-size: 40px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  transition: background 250ms ease-in;
 
-
+  &:hover {
+    background: $text;
+    color: $text-inverse;
+  }
 }
-

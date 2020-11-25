@@ -1,14 +1,14 @@
-const path = require('path');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const HtmlWebPackPlugin = require('html-webpack-plugin');
+const path = require("path");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   output: {
-    filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'dist'),
+    filename: "[name].bundle.js",
+    path: path.resolve(__dirname, "dist"),
   },
   resolve: {
-    extensions: ['.jsx', '.js'],
+    extensions: [".jsx", ".js"],
   },
   module: {
     rules: [
@@ -16,14 +16,14 @@ module.exports = {
         exclude: /node_modules/,
         test: /\.(js|jsx)$/,
         use: {
-          loader: 'babel-loader',
+          loader: "babel-loader",
         },
       },
       {
         test: /\.html$/,
         use: [
           {
-            loader: 'html-loader',
+            loader: "html-loader",
           },
         ],
       },
@@ -31,17 +31,17 @@ module.exports = {
         test: /\.s[ac]ss$/i,
         use: [
           // Creates `style` nodes from JS strings
-          'style-loader',
+          "style-loader",
           // Translates CSS into CommonJS
-          'css-loader',
+          "css-loader",
           // Compiles Sass to CSS
-          'sass-loader',
+          "sass-loader",
         ],
       },
       {
         test: /\.(jpg|png)$/,
         use: {
-          loader: 'url-loader',
+          loader: "url-loader",
         },
       },
     ],
@@ -49,8 +49,8 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebPackPlugin({
-      template: './src/index.html',
-      filename: './index.html',
+      template: "./src/index.html",
+      filename: "./index.html",
     }),
   ],
 };

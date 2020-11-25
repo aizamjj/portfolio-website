@@ -1,22 +1,18 @@
 // COLORS
-
+$black: #000;
 $primary-color: #00b09b;
 $secondary-color: #96c93d;
 $white-color: #fff;
 $dark-grey: #333333;
 $dark-blue-text: #272341;
-$gradient: linear-gradient(
-    135deg,
-    $primary-color 0%,
-    $secondary-color 100%
-);
+$gradient: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
 
 // INVERSE COLORS
 $text: #f4f4f4;
 $text-inverse: #333;
 $background: transparent;
 
-//FONT SIZE
+// FONT SIZE
 
 $default-font-size: 1.6rem;
 $big-font-size: 4rem;

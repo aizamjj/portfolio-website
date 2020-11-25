@@ -1,10 +1,10 @@
 #projects {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;    
+  margin: 0;
+  padding: 0;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // flex-wrap: wrap;
   .box {
     position: relative;
     width: 300px;
@@ -15,21 +15,21 @@
     align-items: center;
     background-color: #060c21;
     color: white;
-  
+
     &::before {
-        content: '';
-        position: absolute;
-        background-image: $gradient;
-        z-index: -1;
-        height: calc(100% + 10px);
-        width: calc(100% + 10px);
-        filter: blur(10px);
+      content: "";
+      position: absolute;
+      background-image: $gradient;
+      z-index: -1;
+      height: calc(100% + 10px);
+      width: calc(100% + 10px);
+      filter: blur(10px);
     }
-    
+
     .content {
-    padding: 20px;
-    box-sizing: border-box;
-    color: white;
+      padding: 20px;
+      box-sizing: border-box;
+      color: white;
     }
-}
+  }
 }

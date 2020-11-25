@@ -1,7 +1,7 @@
-import React, { useContext } from 'react';
-import Container from '@material-ui/core/Container';
-import { useSpring, config, animated } from 'react-spring';
-import PortfolioContext from '../context/context';
+import React, { useContext } from "react";
+import Container from "@material-ui/core/Container";
+import { useSpring, config, animated } from "react-spring";
+import PortfolioContext from "../context/context";
 
 const Hero = () => {
   const { hero } = useContext(PortfolioContext);
@@ -9,7 +9,7 @@ const Hero = () => {
 
   const props = useSpring({
     from: {
-      opacity: 0, 
+      opacity: 0,
       marginLeft: -50,
     },
     to: {
@@ -20,23 +20,23 @@ const Hero = () => {
   });
 
   return (
-      <section id="hero">
-        <Container>
-          <animated.div style={props}>
-            <h1 className="hero-title">
-              {title}
-              <span className="hero-name">{name}</span>
-                <br />
-                {subtitle}
-            </h1>
-          </animated.div>
-            <animated.p className="hero-cta" style={ props } >
-              <a className="cta-btn" href="#about">
-                {cta}
-              </a>
-            </animated.p>
-        </Container>
-      </section>
+    <section id="hero">
+      <Container>
+        <animated.div style={props}>
+          <h1 className="hero-title">
+            {title}
+            <span className="hero-name">{name}</span>
+            <br />
+            {subtitle}
+          </h1>
+        </animated.div>
+        <animated.p className="hero-cta" style={props}>
+          <a className="cta-btn" href="#about">
+            {cta}
+          </a>
+        </animated.p>
+      </Container>
+    </section>
   );
 };
 
