@@ -12,8 +12,8 @@ export const heroData = {
 // ABOUT DATA
 
 export const aboutData = {
-  firstParagraph: "I am a fullstack developer, passionate about React",
-  secondParagraph: "I love creating stuff",
+  firstParagraph: "I am a Software Engineer at Speakfully, which is like whatever.",
+  secondParagraph: "I have an awesome mentor/boyfriend, who buys me booch all the time.",
 };
 
 // PROJECTS DATA

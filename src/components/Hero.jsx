@@ -25,16 +25,14 @@ const Hero = () => {
         <animated.div style={props}>
           <h1 className="hero-title">
             {title}
-            <span className="hero-name">{name}</span>
+            <span className="gradient-name">{name}</span>
             <br />
             {subtitle}
           </h1>
-        </animated.div>
-        <animated.p className="hero-cta" style={props}>
           <a className="cta-btn" href="#about">
             {cta}
           </a>
-        </animated.p>
+        </animated.div>
       </Container>
     </section>
   );

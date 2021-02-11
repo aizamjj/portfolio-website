@@ -13,20 +13,16 @@ const About = () => {
 
   return (
     <section id="about">
-      <Grid container spacing={3}>
+      <Grid container>
         <Grid item xs={12}>
           <Title title="About Me" />
         </Grid>
-        <Grid item xs={12} sm={6}>
-          <div className="about-image">
-            <Image />
-          </div>
+        <Grid item xs={12} sm={6} className="about-image">
+          <Image />
         </Grid>
-        <Grid item xs={12} sm={6}>
-          <div className="about-info">
-            <p>{firstParagraph}</p>
-            <p>{secondParagraph}</p>
-          </div>
+        <Grid item xs={12} sm={6} className="about-info">
+          <p>{firstParagraph}</p>
+          <p>{secondParagraph}</p>
         </Grid>
       </Grid>
     </section>

@@ -5,33 +5,27 @@ import {
   Grid, 
   Card, 
   Container,
-  CardMedia, CardContent, Typography
+  CardContent, 
+  Typography,
+  CardHeader
 } from "@material-ui/core";
 
 const Projects = () => {
   const { projects } = useContext(PortfolioContext);
 
   return (
-    <section id="projects">
-      <Grid container alignContent="space-around">
-        {projects.map((projects, index) => {
-          const { name, url, description } = projects;
+    <Grid id="projects" container alignContent="space-around">
+      { 
+        projects.map(({ name, url, description }) => {
           return (
-            <Card className="box">
-              <CardMedia />
-              <CardContent>
-                <h1>
-                  {name}
-                </h1>
-                <p>
+              <Card classes="project-card">
+                  {name}        
                   {description}
-                </p>
-              </CardContent>
-            </Card>
+              </Card>
           );
-        })}
-      </Grid>
-    </section>
+        })
+      }
+    </Grid>
   );
 };
 

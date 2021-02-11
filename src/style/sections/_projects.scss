@@ -1,35 +1,9 @@
-#projects {
-  margin: 0;
-  padding: 0;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  // flex-wrap: wrap;
-  .box {
-    position: relative;
-    width: 300px;
-    height: 400px;
-    margin: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #060c21;
-    color: white;
-
-    &::before {
-      content: "";
-      position: absolute;
-      background-image: $gradient;
-      z-index: -1;
-      height: calc(100% + 10px);
-      width: calc(100% + 10px);
-      filter: blur(10px);
-    }
-
-    .content {
-      padding: 20px;
-      box-sizing: border-box;
-      color: white;
-    }
-  }
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $gradient !important;
+  color: $black !important;
 }
+

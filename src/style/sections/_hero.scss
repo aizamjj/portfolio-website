@@ -3,6 +3,7 @@
   height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: start;
   font-size: $default-font-size;
   font-weight: 400;
   color: $white-color;
@@ -29,7 +30,7 @@
   }
 }
 
-.hero-name {
+.gradient-name {
   background-image: linear-gradient(
     45deg,
     $primary-color 10%,
